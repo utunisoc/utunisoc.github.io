@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" async></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js" async></script>
+<title>Our Team</title>
+<script async>
+$(document).ready(function(){
+    $("#see").click(function(){
+        $(".search").toggleClass("search1");
+    });
+});
+</script>
+<style>
+#logo{
+	margin-top:-27%;
+	height:4.5vw;
+	width:6vw;
+}
+.search{
+	/*top:8%;
+	background-color:#8AC007;
+	width:100%;
+	height:10%;
+	opacity:0;
+	position:fixed;
+	z-index:999;*/
+	display:none;
+}
+.search1{
+	/*top:8%;
+	background-color:#8AC007;
+	width:100%;
+	height:10%;
+	position:fixed;
+	opacity:1;
+	z-index:999;*/
+	display:none;
+}
+form{
+	margin-top:2%;
+	color:black;
+}
+h1{
+	margin-top:1%;
+	font-size:1000%;
+	text-align:center;
+	font-weight:100;
+}
+body{font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;}
+.team{
+	width:225px;
+	height:225px;
+	margin:50px;
+	border-radius:100%;
+	display:inline-block;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+}
+.team p{
+	font-family:sans-serif;
+	font-size:18px;
+	font-weight: 100;
+	color:white;
+	margin-top:90px;
+	text-align:center;
+}
+.navbar-custom {
+	background-color: #8AC007;
+    color:#FFFFFF;
+  	border-radius:0;
+    min-height:auto;
+}
+  
+.navbar-custom .navbar-nav > li > a {
+  	color:#FFFFFF;
+  	padding-left:25px;
+  	padding-right:25px;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+.navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    color: #FFFFFF;
+	background-color:transparent;
+}
+      
+.navbar-custom .navbar-nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #FFF;
+    color:#8AC007;
+}
+      
+.navbar-custom .navbar-brand {
+   color:#FFFFFF;
+   padding:20px;
+}
+.navbar-custom .navbar-brand:visited {
+   color:#FFFFFF;
+   padding:20px;
+}
+
+.navbar-custom .navbar-toggle,
+.navbar-custom .nav .open>a, .navbar-custom .nav .open>a:hover, .navbar-custom .nav .open>a:focus {
+   background-color:transparent;
+   color:#FFF;
+}
+
+.navbar-custom .icon-bar {
+   border: 1px solid #fff;                
+}
+
+/*-- change navbar dropdown color --*/
+.navbar-custom .navbar-nav .open .dropdown-menu>li>a,.navbar-custom .navbar-nav .open .dropdown-menu {
+    color:#8AC007;
+}
+</style>
+</head>
+
+<body>
+<div class="navbar navbar-custom navbar-static-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" style="color:white;" href="http://utahunicyclingsociety.com/"><img src="img/logo.png" id="logo"/></a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="Donations.html">Donate</a></li>
+        <li><a href="About-Us.html">About Us</a></li>
+         <li class="dropdown "><a href="Media.html" id="drop2" data-toggle="dropdown" class="dropdown-toggle" role="button">Media<b class="caret"></b></a>
+            <ul role="menu" class="dropdown-menu" aria-labelledby="drop2">
+                <li role="presentation"><a href="Media.html" role="menuitem">Media</a></li>
+                <li role="presentation"><a href="Photography.html" role="menuitem">Photos</a></li>
+                <li role="presentation"><a href="Videos.html" role="menuitem">Videos</a></li>
+                <li role="presentation"><a href="https://docs.google.com/a/pcstudents.us/forms/d/1hNycR_-2Kg1GBj2pPWMFOQ9OxPjiJk-bmTBllLLCjQM/viewform" role="menuitem">Submit your own</a></li>
+            </ul>
+        </li>
+        <li class="dropdown "><a href="Help.html" id="drop3" data-toggle="dropdown" class="dropdown-toggle" role="button">Help<b class="caret"></b></a>
+            <ul role="menu" class="dropdown-menu" aria-labelledby="drop3">
+                <li role="presentation"><a href="Help.html" role="menuitem">Help</a></li>
+                <li role="presentation"><a href="Learn-To-Ride.html" role="menuitem">Learn To Ride</a></li>
+                <li role="presentation"><a href="Tips-and-Tricks.html" role="menuitem">Tips and Tricks</a></li>
+                <li role="presentation"><a href="Vegetable-Grading.html" role="menuitem">Vegetable Grading</a></li>
+                <li role="presentation"><a href="https://docs.google.com/forms/d/1FG5eF1Wk7QuWyL8E6p0LpZl1WGHSuDjyEdZoFS1mLcU/viewform" target="_blank">Contact Us  <img src="Jump Around.gif"/></a></li>
+            </ul>
+        </li>
+        <li><a class="glyphicon glyphicon-search" id="see"></a></li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="search">
+<form name="cse" id="searchbox_demo" action="https://www.google.com/cse"> <input type="hidden" name="cref" value="" /> <input type="hidden" name="ie" value="utf-8" /> <input type="hidden" name="hl" value="" /> <input name="q" type="text" size="40" /> <input type="submit" name="sa" value="Search" /> </form> <script type="text/javascript" src="https%3A%2F%2Fcse.google.com%2Fcse/tools/onthefly?form=searchbox_demo&lang="></script>
+</div>
+<h1>Our Team</h1>
+<center>
+	<h3>*Sorted by alphabetical order of first name</h3>
+    <a href="https://docs.google.com/forms/d/1sVuIYH-mMbmEeUTAi1nIfi8OZb2lnrniT4lBid4EW8c/viewform" target="_blank">
+    <div style="background-image: url('https://d30y9cdsu7xlg0.cloudfront.net/png/212203-200.png')" class="team"><p>Join Us</p></div></a>
+	<div style="background-image: url('img/profile_pics/Anna Profile Pic.jpg')" class="team"><p>Anna</p></div>
+	<div style="background-image: url('img/profile_pics/Annika Profile Pic.png')" class="team"><p>Annika</p></div>
+	<div style="background-image: url('img/profile_pics/Ben Profile Pic.jpg')" class="team"><p>Ben</p></div>
+	<div style="background-image: url('img/profile_pics/blank profile pic.png')" class="team"><p>Connor</p></div>
+  <div style="background-image: url('img/profile_pics/David Profile Pic.png')" class="team"><p>David</p></div>
+   <div style="background-image: url('img/profile_pics/Drew Profile Pic.jpg')" class="team"><p>Drew</p></div>
+    <div style="background-image: url('img/profile_pics/Evan Profile Pic.png')" class="team"><p>Evan</p></div>
+    <div style="background-image: url('img/profile_pics/blank profile pic.png')" class="team"><p>Jake</p></div>
+    <div style="background-image: url('img/profile_pics/James Profile Pic.png')" class="team"><p>James</p></div>
+    <div style="background-image: url('img/profile_pics/Liam Profile Pic.png')" class="team"><p>Liam</p></div>
+    <div style="background-image: url('img/profile_pics/Max Profile Pic.png')" class="team"><p>Max</p></div>
+    <div style="background-image: url('img/profile_pics/nate profile pic.jpg')" class="team"><p>Nate</p></div>
+    <div style="background-image: url('img/profile_pics/blank profile pic.png')" class="team"><p>Nick</p></div>
+    <div style="background-image: url('img/profile_pics/Sammy Profile Pic.png')" class="team"><p>Sammy</p></div>
+    <div style="background-image: url('img/profile_pics/Shane Profile Pic.png')" class="team"><p>Shane</p></div>
+    <div style="background-image: url('img/profile_pics/Stein New Profile Pic.jpg')" class="team"><p>Stein</p></div>
+    <div style="background-image: url('img/profile_pics/Tay New Profile Pic.png')" class="team"><p>Tay</p></div>
+</center>
+</body>
+</html>
